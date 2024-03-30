@@ -1,5 +1,5 @@
 function love.load()
-	Object = require("classic")
+	Object = require("lib.classic")
 end
 
 function love.update(dt)
