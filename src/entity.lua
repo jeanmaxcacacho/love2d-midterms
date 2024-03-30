@@ -7,6 +7,10 @@ function Entity:new(sprite, x, y)
 	self.y = y
 end
 
+function Entity:position_set()
+
+end
+
 function Entity:draw()
 	love.graphics.draw(self.sprite, self.x, self.y)
 end
