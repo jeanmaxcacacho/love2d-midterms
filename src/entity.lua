@@ -4,8 +4,8 @@ function Entity:new(sprite, x, y)
 	self.sprite = sprite
 	self.x = x
 	self.y = y
-	self.x_center = love.graphics.getWidth(sprite)/2
-	self.y_center = love.graphics.getHeight(sprite)/2
+	self.width = love.graphics.getWidth(sprite)
+	self.height = love.graphics.getHeight(sprite)
 end
 
 function Entity:draw()

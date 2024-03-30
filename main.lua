@@ -23,7 +23,7 @@ function love.load()
 	enemy = Entity(
 		enemy_sprite,
 		25,
-		400
+		475
 	)
 end
 
