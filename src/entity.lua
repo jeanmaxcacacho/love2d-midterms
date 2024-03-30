@@ -1,10 +1,11 @@
 Entity = Object:extend()
 
 function Entity:new(sprite, x, y)
-	-- sprite will be a string containing the path to the img
-	self.sprite = love.graphics.newImage(sprite)
+	self.sprite = sprite
 	self.x = x
 	self.y = y
+	self.width = love.graphics.getWidth(sprite)
+	self.height = love.graphics.getHeight(sprite)
 end
 
 function Entity:draw()
