@@ -9,21 +9,21 @@ function love.load()
 	enemy_sprite = love.graphics.newImage("assets/snake.png")
 
 	-- sprite properties
-	player_center = player_sprite.getWidth()
-	enemy_center = enemy_sprite.getWidth()
+	player_center = love.graphics.getWidth(player_sprite)
+	enemy_center = love.graphics.getWidth(enemy_sprite)
 
 	-- OOP is a cancer to society ngl
 	require("src.entity")
 	player = Entity(
-		"assets/panda.png",
-		love.graphics.getWidth()/2,
+		player_sprite,
+		25,
 		25
 	)
 
 	enemy = Entity(
-		"assets/snake.png",
-		love.graphics.getWidth()/2,
-		love.graphics.getHeight() - 25
+		enemy_sprite,
+		25,
+		400
 	)
 end
 
