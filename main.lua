@@ -4,8 +4,14 @@ function love.load()
 	require("src.entity")
 	player = Entity(
 		"assets/panda.png",
-		100,
-		100
+		love.graphics.getWidth()/2,
+		25
+	)
+
+	enemy = Entity(
+		"assets/snake.png",
+		love.graphics.getWidth()/2,
+		love.graphics.getHeight() - 25
 	)
 end
 
@@ -15,4 +21,5 @@ end
 
 function love.draw()
 	player:draw()
+	enemy:draw()
 end
