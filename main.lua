@@ -28,7 +28,8 @@ function love.load()
 end
 
 function love.update(dt)
-
+	player:update(dt)
+	enemy:update(dt)
 end
 
 function love.draw()
